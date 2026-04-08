@@ -1,0 +1,23 @@
+{
+  "name": "nuclera_assessment_ml",
+  "version": "1.0.0",
+  "description": "My submission for the Nuclera assessment",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlongworth87/nuclera_assessment_ml.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mlongworth87/nuclera_assessment_ml/issues"
+  },
+  "homepage": "https://github.com/mlongworth87/nuclera_assessment_ml#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2"
+  }
+}
