@@ -1,0 +1,10 @@
+{
+    "adminUser" : {
+        "username" : "admin",
+        "password" : "yR310Fv9zqkvNU"
+    },
+    "basicUser" : {
+        "username" : "testuser",
+        "password" : "AY98xaMCloZF9A"
+    }
+}

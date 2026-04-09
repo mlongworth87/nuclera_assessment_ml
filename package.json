@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/mlongworth87/nuclera_assessment_ml#readme",
   "devDependencies": {
-    "@playwright/test": "^1.59.1",
+    "@playwright/test": "1.59.1",
     "@types/node": "^25.5.2"
   }
 }
