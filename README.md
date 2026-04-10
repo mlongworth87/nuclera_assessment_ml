@@ -7,8 +7,8 @@ Considerations:
 - For Repository, I worked on the Main branch for simplicity.  I know that you absolutely would not do this typcially - you would probably work off of a new branch based off either 'develop' or 'stage' depending on circumstance and/or coding practices, and then merge it all back when ready.
 
 ===================================================
- Setup INSTRUCTIONS
- ==================================================
+Setup INSTRUCTIONS
+==================================================
 
  This code was created using Visual Studio Code (https://code.visualstudio.com/download)
  Once downloaded, ensure all code was checked out of GitHub repository: https://github.com/mlongworth87/nuclera_assessment_ml    (Probably done as you're reading this :>)
@@ -23,28 +23,32 @@ Considerations:
  - Install Playwright in VS: https://playwright.dev/docs/getting-started-vscode
  - When executing tests, make sure in terminal you are in tests folder (e.g. cd .\nuclera_assessment_ml\tests\)
  - Can execute all tests (npx playwright test) or individually using UI (npx playwright test --ui)
+ - if Issues in playwright.config, try executing npm install --save-dev @types/node
 
- ==================================================
- Prioritsation Logic
- ==================================================
+==================================================
+Prioritsation Logic
+==================================================
 
  - Most important - make sure Logins work - if they dont it's completely useless :)
- - Security, make sure no one without access can see info - and that non - admins cannot see admin features
  - Happy path flow for create project
- - Happy path flow for synchronise
 
- Ongoing considerations (Not submitted)
+ Ongoing considerations (Not submitted due to time constraints)
+ - Add and edit project items, tests for changes in project status
+ - User testing - add/delete users, ensure deleted users could no longer log in etc
+ - Security, make sure no one without access can see info - and that non - admins cannot see admin features
+ - Happy path flow for synchronise
  - Ensure search functionality works as expected
  - Ensure status filters work as expected
  - Ensure loading once over a page's worth of projects were loaded
+ - Down the road, may want to do other forms of testing, e.g. load testing with many users on conducting tasks
 
  Found issues:
  - On Projects page, on search projects, behaviour was weird when typing 1 character.  e.g. Searching 'G'  would bring up 'Beta' and 'Gamma' - where I would only expected Gamma to display
  - On Login page, no real error is displayed in case of bad credentials.
 
- ==========================================
- OO & infrastructure Choices
- ==========================================
+==========================================
+OO & infrastructure Choices
+==========================================
 
  - Created a base page class (base_page.ts) which all pages inherit off.  This ensures all pages have access to all base functionality and use it - this promotes code reuse and ease of maintenance.
  - Pages are structured so each site page has it's own corresponding page class - this is logical and should keep things organised and easy to find

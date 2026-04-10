@@ -15,7 +15,7 @@ export class LoginPage extends BasePage {
         this.loginButton = 'Sign in';
     }
 
-    async do_login(baseUrl : string, username: string, password: string): Promise<this> {
+    async do_login(baseUrl : string, username : string, password : string): Promise<this> {
         await this.goto_page(baseUrl);
         await this.verify_on_login_page();
         await this.fill_username_field(username);
@@ -31,7 +31,7 @@ export class LoginPage extends BasePage {
         return(this.fill_textbox_by_name(this.usernameName, username));
     }
 
-    async fill_password_field(password: string): Promise<this> {
+    async fill_password_field(password : string): Promise<this> {
         return(this.fill_textbox_by_name(this.passwordName, password));
     }
 

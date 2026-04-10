@@ -1,0 +1,14 @@
+{
+    "projectStatus" : {
+        "All" : "All Statuses",
+        "Active" : "Active",
+        "Archived" : "Archived",
+        "Completed" : "Completed"
+    },
+    "itemStats" : {
+        "ToDo" : "ToDo",
+        "In Progress" : "In Progress",
+        "Done" : "Done"
+    }
+
+}
